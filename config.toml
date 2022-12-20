@@ -1,0 +1,28 @@
+baseURL = 'http://example.org/'
+languageCode = 'fr-f'
+title = 'elise goutagny'
+theme = "paperesque" 
+[[params.menu]]
+  name = "présentation de la thèse - story Instagram"
+  url = "presentation/"
+
+[[params.menu]]
+  name = "publications et communications"
+  url = "publis_et_com/"
+
+[[params.menu]]
+  name = "about"
+  url = "about.html"
+
+[[params.menu]]
+  name = "contact"
+  url = "contact/"
+
+[[params.topmenu]]
+  name = "about"
+  url = "about/"
+
+[[params.topmenu]]
+  name = "contact"
+  url = "contact/"
+

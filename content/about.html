@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html style="background-color: #dfdfdf;">
+<head>
+<title>coursfanzine</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="https://elisegoutagny.hotglue.me/img/favicon.ico">
+<link rel="stylesheet" type="text/css" href="https://elisegoutagny.hotglue.me/css/reset.min.css">
+<link rel="stylesheet" type="text/css" href="https://elisegoutagny.hotglue.me/css/main.css">
+<!-- user HEAD definitions -->
+ <style type="text/css">
+  * {
+    box-sizing: border-box;
+  }
+
+  a {
+    color: #FF7C3B;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  hr {
+    border: none;
+    border-bottom: 1px solid #999;
+    width: 80%;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: white;
+    color: #333;
+    font-family: 'DejaVu', 'Georgia', 'Times New Roman', 'Times', serif;
+  }
+
+  article {
+    width: 50%;
+    font-size: 1.5em;
+    margin: 0 auto;
+    line-height: 150%;
+  }
+
+  /* Better display on printing */
+  @media print {
+    article {
+      width: 90%;
+      font-size: 12pt;
+      margin: 0 auto;
+      line-height: 150%;
+    }
+  }
+
+  article p {
+    hyphens: auto;
+    text-align: justify;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', 'Lato', 'Liberation sans', 'Helvetica', sans-serif;
+    color: #FF7C3B;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  blockquote {
+    font-size: 80%;
+    color: rgba(120, 120, 120, 1);
+    margin: 2% 5%;
+    line-height: 120%;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 70%;
+    font-family: 'Raleway', 'Lato', 'Liberation sans', 'Helvetica', sans-serif;
+  }
+
+  th, td {
+    padding: 4px 20px;
+    border-bottom: 1px solid #333;
+  }
+
+  figure {
+    text-align: center;
+  }
+
+  figure figcaption {
+    text-align: center;
+  }
+
+  /* List of classes taken from the skylighting lib */
+  /* See: https://github.com/jgm/skylighting/blob/master/skylighting-core/src/Skylighting/Format/HTML.hs */
+
+  /* Colors: Solarized theme (light) */
+  /* See: https://ethanschoonover.com/solarized/ */
+
+  /* Specific implementation: Taken from the GEdit theme (light) */
+  /* See: https://github.com/altercation/solarized/blob/master/gedit/solarized-light.xml */
+
+  /* Generic styles */
+  pre.sourceCode {
+    color: #657b83;
+    background-color: #fdf6e3;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .05);
+    padding: 2px;
+    overflow: auto;
+  }
+
+  /* All classes, taken from skylighting lib */
+  .sourceCode .kw { color: #859900; font-weight: bold; } /* Keyword */
+  .sourceCode .dt { color: #b58900; } /* Datatype */
+  .sourceCode .df { color: #d33682; } /* Decimal values*/
+  .sourceCode .bn { color: #d33682; } /* base-n-integers */
+  .sourceCode .fl { color: #d33682; } /* Floats */
+  .sourceCode .ch { color: #2aa198; } /* Character */
+  .sourceCode .st { color: #2aa198; } /* String */
+  .sourceCode .vs { color: #2aa198; } /* Verbatim String */
+  .sourceCode .ss { color: #2aa198; } /* Special String */
+  .sourceCode .co { color: #586e75; font-style: italic; } /* Comment */
+  .sourceCode .ot { font-weight: bold; } /* Other token */
+  .sourceCode .al { color: #d33682; background-color: #073642; } /* Alert */
+  .sourceCode .fu { color: #268bd2; } /* Function name */
+  .sourceCode .re {} /* Region marker */
+  .sourceCode .er { color: #dc322f; font-weight: bold; } /* Error */
+  .sourceCode .cn { color: #2aa198; } /* Constant */
+  .sourceCode .sc { color: #dc322f; } /* Special character */
+  .sourceCode .im { color: #6c71c4; font-weight: bold; } /* Import statement */
+  .sourceCode .do { color: #dc322f; } /* Documentation string */
+  .sourceCode .an { color: #2aa198; } /* Annotation */
+  .sourceCode .cv { color: #6c71c4; } /* Comment var */
+  .sourceCode .va { color: #268bd2; } /* Variable */
+  .sourceCode .cf { color: #859900; } /* Control Flow (if, else, return) */
+  .sourceCode .op {} /* Operator */
+  .sourceCode .bu { color: #b58900; } /* Builtin function/class/identifier */
+  .sourceCode .ex { color: #268bd2; } /* Extension */
+  .sourceCode .pp { color: #cb4b16; } /* Preprocessor, like #import in C++ */
+  .sourceCode .at { color: #dc322f; } /* Attribute */
+  .sourceCode .in { color: #586e75; } /* Information */
+  .sourceCode .wa { color: #cb4b16; } /* Warning */
+  </style>
+</head>
+<body id="coursfanzine.head" class="page">
+	<div id="coursfanzine.head.166965468910" class="iframe resizable object" style="height: 403.4px; left: 1175.8px; position: absolute; top: 7477.8px; width: 766.4px; z-index: 100;">
+		<iframe name="coursfanzine.head.166965468910" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation" style="background-color: transparent; border-width: 0px; height: 100%; overflow: auto; position: absolute; width: 100%;" src="//www.grassrootsfeminism.net/cms/sortable_node_list_digital_grass/134" scrolling="auto"></iframe>
+	</div>
+	<div id="coursfanzine.head.166965494032" class="image resizable object" style="height: 658.4px; left: 178.8px; position: absolute; top: 599.8px; width: 464.488px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166965494032" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166965501320" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 96.4px; left: 661.8px; line-height: 0.902665em; position: absolute; top: 610.8px; width: 243.4px; z-index: 100;">
+		Shocking Pink, Katy Watson<br>
+		1981-82<br>
+		1987-92
+	</div>
+	<div id="coursfanzine.head.166965516068" class="iframe resizable object" style="height: 658px; left: 831px; position: absolute; top: 782px; width: 515px; z-index: 100;">
+		<iframe name="coursfanzine.head.166965516068" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation" style="background-color: transparent; border-width: 0px; height: 100%; overflow: auto; position: absolute; width: 100%;" src="//www.grassrootsfeminism.net/cms/sites/default/files/Shocking%20Pink_11.pdf" scrolling="auto"></iframe>
+	</div>
+	<div id="coursfanzine.head.16696555883" class="iframe resizable object" style="height: 716.4px; left: 245.8px; position: absolute; top: 1212.8px; width: 541.4px; z-index: 100;">
+		<iframe name="coursfanzine.head.16696555883" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation" style="background-color: transparent; border-width: 0px; height: 100%; overflow: auto; position: absolute; width: 100%;" src="//www.grassrootsfeminism.net/cms/sites/default/files/Shocking%20Pink_7_0.pdf" scrolling="auto"></iframe>
+	</div>
+	<div id="coursfanzine.head.166965566071" class="iframe resizable object" style="height: 628.4px; left: 263.8px; position: absolute; top: 9098.8px; width: 983.4px; z-index: 100;">
+		<iframe name="coursfanzine.head.166965566071" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation" style="background-color: transparent; border-width: 0px; height: 100%; overflow: auto; position: absolute; width: 100%;" src="//www.grassrootsfeminism.net/cms/sites/default/files/medusa1.pdf" scrolling="auto"></iframe>
+	</div>
+	<div id="coursfanzine.head.166965573922" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 96.4px; left: 96.8px; position: absolute; top: 9109.8px; width: 243.4px; z-index: 100;">
+		Medusa,<br>
+		Allemagne,<br>
+		2006
+	</div>
+	<div id="coursfanzine.head.166965583342" class="iframe resizable object" style="height: 471.041px; left: 134.8px; position: absolute; top: 7971.8px; width: 932.4px; z-index: 100;">
+		<iframe name="coursfanzine.head.166965583342" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation" style="background-color: transparent; border-width: 0px; height: 100%; overflow: auto; position: absolute; width: 100%;" src="//www.grassrootsfeminism.net/cms/sites/default/files/notwaiting.pdf" scrolling="auto"></iframe>
+	</div>
+	<div id="coursfanzine.head.166965587882" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 204.4px; left: 1079.8px; position: absolute; top: 8043.8px; width: 327.4px; z-index: 100;">
+		I'm not waiting, Doin'it yourself, now<br>
+		<br>
+		Melanie Maddison<br>
+		2004<br>
+		<br>
+		Tiré de son mémoire de master
+	</div>
+	<div id="coursfanzine.head.166965597628" class="iframe resizable object" style="height: 627px; left: 783px; position: absolute; top: 8481px; width: 778px; z-index: 100;">
+		<iframe name="coursfanzine.head.166965597628" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation" style="background-color: transparent; border-width: 0px; height: 100%; overflow: auto; position: absolute; width: 100%;" src="//www.grassrootsfeminism.net/cms/sites/default/files/Pecs_ongles_1_1.pdf" scrolling="auto"></iframe>
+	</div>
+	<div id="coursfanzine.head.166965600749" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 204.4px; left: 480.8px; position: absolute; top: 8496.8px; width: 327.4px; z-index: 100;">
+		Pecs et ongles<br>
+		Les Panthères roses<br>
+		France<br>
+		<br>
+		2008-2009<br>
+	</div>
+	<div id="coursfanzine.head.166966386292" class="text resizable object locked" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 24px; font-style: normal; font-weight: bold; height: 2550.67px; left: 103.667px; line-height: 1.19722em; padding-bottom: 18px; padding-left: 18px; padding-right: 18px; padding-top: 18px; position: absolute; top: 3800.67px; width: 788.667px; z-index: 100;">
+		Riot Grrrl, c’est……………………………….&nbsp;:<br>
+		<br>
+		PARCE QUE nous les filles avons terriblement besoin de livres et de fanzines et de disques qui NOUS parlent, dans lesquels NOUS nous sentons incluses et que nous pouvons comprendre dans nos propres termes.<br>
+		<br>
+		PARCE QUE nous voulons faire que ce soit plus facile pour les filles de voir/écouter nos travaux mutuels, pour partager des stratégies et se critiquer ou s’applaudir.<br>
+		<br>
+		PARCE QUE nous devons nous approprier les moyens de production pour pouvoir créer nos propres significations.<br>
+		<br>
+		PARCE QUE considérer notre travail en tant que connecté à nos amies-politiques-vraies vies est essentiel si on veut comprendre comment on impacte, reflète, perpétue ou PERTURBE le statu quo.<br>
+		<br>
+		PARCE QUE nous jugeons que la fantasmagorie de la révolution instantanée macho avec des flingues n’est qu’un mensonge irréalisable destiné à nous laisser rêver plutôt qu’à devenir notre rêve, et que DONC nous cherchons la révolution dans nos propres vies chaque jour en imaginant et en créant des alternatives à la manière chrétienne merdique et capitaliste de faire les choses.<br>
+		<br>
+		PARCE QUE nous voulons et avons besoin d’encourager et d’être encouragées face à toutes nos insécurités face au rockergarçonbedonnantdebière qui nous dit qu’on ne sait pas jouer de nos instruments, face aux “autorités” qui disent que nos groupes/zines/etc. sont les pires des États-Unis et qui attribuent toute validation/succès de notre travail à une hype de filles qui prennent le train en marche.<br>
+		<br>
+		PARCE QU’on ne veut pas s’assimiler aux standards d’autres (garçons) qui établissent ce qui est ou n’est pas de la “bonne” musique ou punk rock ou de la “bonne” littérature et que DONC on doit créer des forums où on peut recréer, détruire et définir nos propres visions.<br>
+		<br>
+		PARCE QU’on ne veut pas fléchir sous les accusations selon lesquelles on est des “sexistes inversées” réactionnaires et non pas les vraiesâmespunkrockmilitantes que nous SAVONS que nous sommes pour de vrai.<br>
+		<br>
+		PARCE QUE nous savons que la vie c’est bien plus que la survie physique, et avons pleinement conscience que l’idée punk de “tu peux tout faire” est cruciale pour la révolution rock des filles en colère qui se prépare et qui tend à sauver des vies psychologiques et culturelles de filles et de femmes partout, selon leurs propres termes, pas les nôtres.<br>
+		<br>
+		PARCE QUE ce qui nous intéresse c’est créer des manières non hiérarchiques d’être ET de faire de la musique et de se faire des amiEs et développer des scènes sur la base de la communication +&nbsp;la compréhension, plutôt que la compétition +&nbsp;les catégorisations bon/mauvais.<br>
+		<br>
+		PARCE QUE faire/lire/voir/écouter des choses cool qui nous incluent ou qui nous remuent peut nous aider à gagner la force et l’esprit de communauté dont nous avons besoin pour comprendre comment des conneries comme le racisme, le validisme, l’agisme, le spécisme, le classisme, le sexisme, l’antisémitisme et l’hétérosexisme affectent nos propres vies.<br>
+		<br>
+		PARCE QUE nous considérons comme partie intégrante de ce processus le fait de favoriser et d’encourager les scènes de filles et les artistes filles de toutes sortes.<br>
+		<br>
+		PARCE QUE nous haïssons le capitalisme sous toutes ses formes et que notre but principal c’est de partager des informations et de rester en vie, au lieu de tirer du profit du fait d’être cool selon les standards traditionnels.<br>
+		<br>
+		PARCE QU’on est en colère contre une société qui nous dit Fille =&nbsp;Stupide, Fille =&nbsp;Mauvaise, Fille =&nbsp;Faible.<br>
+		<br>
+		PARCE QU’on refuse de laisser notre colère réelle et légitime se faire diluer ou se retourner contre nous via l’internalisation du sexisme tel qu’on peut le voir dans les jalousies entre filles et les comportements typiques d’autosabotage.<br>
+		<br>
+		PARCE QUE les comportements autodestructeurs (comme baiser des mecs sans capote, boire à l’excès, ignorer des amies de cœur aux belles âmes, se déprécier et déprécier d’autres filles) ne seraient pas si faciles si on vivait dans des communautés où on se sentait aimées, voulues, valorisées.<br>
+		<br>
+		PARCE QUE je crois de tout mon coeurespritcorps que les filles constituent une force spirituelle révolutionnaire qui peut et qui va changer le monde pour de vrai.&nbsp;»
+	</div>
+	<div id="coursfanzine.head.16696644234" class="text resizable object locked" style="background-color: rgb(255, 248, 68); height: 90.6667px; left: 111.667px; opacity: 1; position: absolute; top: 4160.67px; width: 822.667px; z-index: 99;">
+	</div>
+	<div id="coursfanzine.head.166966464335" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 32px; font-style: normal; font-weight: bold; height: 893.4px; left: 160.8px; line-height: 1.36795em; position: absolute; top: 7008.8px; width: 927.4px; z-index: 99;">
+		<details> <summary> DO&nbsp;IT&nbsp;YOURSELF </summary><br>
+		--&gt; AMATEUR<br>
+		--&gt; PROVOQUER&nbsp;L'ACTION&nbsp;PLUTÔT&nbsp;QUE&nbsp;L'ADMIRATION<br>
+		--&gt; DETENIR&nbsp;LES&nbsp;MOYENS&nbsp;DE&nbsp;PRODUCTION<br>
+		<br>
+		</details><br>
+		<details> <summary>LES&nbsp;FILLES&nbsp;DEVANT</summary><br>
+		--&gt; OCCUPER&nbsp;L'ESPACE<br>
+		--&gt; AMIES&nbsp;DE&nbsp;COEUR<br>
+		--&gt; SE&nbsp;SOUTENIR, SE&nbsp;PROTEGER<br>
+		<br>
+		</details><br>
+		<details> <summary> LE&nbsp;RINGARD&nbsp;EST&nbsp;COOL / ON&nbsp;SE&nbsp;FOUT&nbsp;DU&nbsp;COOL</summary><br>
+		--&gt; ANTICAPITALISTE<br>
+		--&gt; GRRRL&nbsp;STYLE<br>
+		----&gt; GIRLY<br>
+		----&gt; BITCH<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</div>
+	<div id="coursfanzine.head.16696649996" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 32px; font-style: normal; font-weight: bold; height: 180.4px; left: 1180.8px; line-height: 1.36795em; position: absolute; top: 379.8px; width: 334.4px; z-index: 100;">
+		<br>
+	</div>
+	<div id="coursfanzine.head.166966502493" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 90px; font-style: normal; font-weight: bold; height: 304.4px; left: 122.8px; line-height: 1.36795em; position: absolute; top: 175.8px; width: 1333.4px; z-index: 100;">
+		fanzines x féminismes<br>
+		 (depuis les riot grrrls)<br>
+	</div>
+	<div id="coursfanzine.head.166966700527" class="image resizable object" style="height: 682px; left: 660px; position: absolute; top: 2036.65px; width: 558px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166966700527" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166966700528" class="image resizable object" style="height: 666px; left: 64px; position: absolute; top: 1899.65px; width: 574px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166966700528" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166966704497" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 96.4px; left: 1231.8px; line-height: 0.902665em; position: absolute; top: 2039.8px; width: 243.4px; z-index: 100;">
+		Jigsaw #2<br>
+		Tobi Vail<br>
+		février 1990
+	</div>
+	<div id="coursfanzine.head.16696681331" class="image resizable object" style="height: 783px; left: 768px; position: absolute; top: 2759.6px; width: 535px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.16696681331" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.16696681332" class="image resizable object" style="height: 884.829px; left: 46.6667px; position: absolute; top: 2751.67px; width: 712.667px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.16696681332" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166966827595" class="text resizable object" style="background-color: rgb(255, 248, 68); height: 79.6667px; left: 107.667px; opacity: 1; position: absolute; top: 5533.67px; width: 809.667px; z-index: 99;">
+	</div>
+	<div id="coursfanzine.head.166966831778" class="text resizable object" style="background-color: rgb(255, 248, 68); height: 182px; left: 103px; opacity: 1; position: absolute; top: 6133px; width: 839px; z-index: 99;">
+	</div>
+	<div id="coursfanzine.head.166966835763" class="text resizable object" style="background-color: rgb(255, 248, 68); height: 258.4px; left: 100.8px; opacity: 1; position: absolute; top: 5738.8px; width: 822.4px; z-index: 99;">
+	</div>
+	<div id="coursfanzine.head.166966870835" class="iframe resizable object" style="height: 815.4px; left: 56.8px; position: absolute; top: 9831.8px; width: 734.4px; z-index: 100;">
+		<iframe name="coursfanzine.head.166966870835" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation" style="background-color: transparent; border-width: 0px; height: 100%; overflow: auto; position: absolute; width: 100%;" src="//www.qzap.org/v5/gallery/main.php?g2_view=core.DownloadItem&amp;g2_itemId=81" scrolling="auto"></iframe>
+	</div>
+	<div id="coursfanzine.head.16696689741" class="image resizable object" style="height: 715.4px; left: 964.8px; position: absolute; top: 10575.8px; width: 475.239px; z-index: 101;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.16696689741" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.16696689743" class="image resizable object" style="height: 554px; left: 44px; position: absolute; top: 11353px; width: 836.369px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.16696689743" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.16696689745" class="image resizable object" style="height: 634.4px; left: 152.8px; position: absolute; top: 10741.8px; width: 960.526px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.16696689745" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.16696689746" class="image resizable object" style="height: 790px; left: 720px; position: absolute; top: 9922.3px; width: 611px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.16696689746" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967107198" class="iframe resizable object" style="height: 342.4px; left: 1230.8px; position: absolute; top: 7118.8px; width: 737.4px; z-index: 100;">
+		<iframe name="coursfanzine.head.166967107198" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation" style="background-color: transparent; border-width: 0px; height: 100%; overflow: auto; position: absolute; width: 100%;" src="//archivesautonomies.org/spip.php?rubrique384" scrolling="auto"></iframe>
+	</div>
+	<div id="coursfanzine.head.166967129131" class="iframe resizable object" style="height: 630px; left: 1989px; position: absolute; top: 7003px; width: 755px; z-index: 100;">
+		<iframe name="coursfanzine.head.166967129131" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation" style="background-color: transparent; border-width: 0px; height: 100%; overflow: auto; position: absolute; width: 100%;" src="//grrrlzines.net/" scrolling="auto"></iframe>
+	</div>
+	<div id="coursfanzine.head.166967142230" class="image resizable object" style="height: 425px; left: 1892px; position: absolute; top: 7712px; width: 755.556px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967142230" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967144359" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 204.4px; left: 2652.8px; position: absolute; top: 7715.8px; width: 327.4px; z-index: 100;">
+		Fanzinothèque de Poitiers
+	</div>
+	<div id="coursfanzine.head.166967147248" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 204.4px; left: 1226.8px; position: absolute; top: 7090.8px; width: 327.4px; z-index: 100;">
+		Archivesautonomies
+	</div>
+	<div id="coursfanzine.head.166967164678" class="image resizable object" style="height: 587.2px; left: 689px; position: absolute; top: 11988.4px; width: 883.126px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967164678" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967164679" class="image resizable object" style="height: 587.2px; left: 11px; position: absolute; top: 12410.4px; width: 883.126px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967164679" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967164680" class="image resizable object" style="height: 587.2px; left: 52px; position: absolute; top: 13520.4px; width: 883.126px; z-index: 101;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967164680" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967164681" class="image resizable object" style="height: 587.2px; left: 546px; position: absolute; top: 12966.4px; width: 883.126px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967164681" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967168813" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 94.4px; left: 57.8px; position: absolute; top: 9764.8px; width: 402.4px; z-index: 100;">
+		Lesbian Avengers <br>
+		Dyke Manifesto<br>
+		1993
+	</div>
+	<div id="coursfanzine.head.166967176496" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 96.4px; left: 807.8px; position: absolute; top: 9847.8px; width: 243.4px; z-index: 100;">
+		Lesbian Avengers<br>
+		Handbook<br>
+		1991
+	</div>
+	<div id="coursfanzine.head.166967180175" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 253.4px; left: 886.8px; position: absolute; top: 11387.8px; width: 353.4px; z-index: 100;">
+		Lesbian Avengers<br>
+		Handbook <br>
+		version française<br>
+		199?<br>
+		<br>
+		A4 laser noir sur papier machine<br>
+		agrafes<br>
+		<br>
+		<br>
+	</div>
+	<div id="coursfanzine.head.166967186670" class="image resizable object" style="height: 394px; left: 1904px; position: absolute; top: 7743px; width: 702.222px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967186670" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.16696720383" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 226.4px; left: 42.8px; position: absolute; top: 12199.8px; width: 450.4px; z-index: 100;">
+		La Grimoire<br>
+		coordonné par <br>
+		Nadine Laroche<br>
+		Albi,1991<br>
+		<br>
+		A4<br>
+		laser noir sur papier machine blanc et couleur<br>
+		reliure spirale plastique<br>
+		couvertures uniques en relief<br>
+	</div>
+	<div id="coursfanzine.head.166967221470" class="image resizable object" style="height: 798px; left: 818px; position: absolute; top: 24482px; width: 647.101px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967221470" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967221471" class="image resizable object" style="height: 891px; left: 184px; position: absolute; top: 24578px; width: 721.704px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967221471" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967221474" class="image resizable object" style="height: 827.667px; left: 581.667px; position: absolute; top: 19028.7px; width: 1102.55px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967221474" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967221475" class="image resizable object" style="height: 808px; left: 299px; position: absolute; top: 20277.2px; width: 808px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967221475" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967221476" class="image resizable object" style="height: 587.2px; left: 1092px; position: absolute; top: 20031.2px; width: 407.343px; z-index: 101;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967221476" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967221477" class="image resizable object" style="height: 587.2px; left: 40px; position: absolute; top: 18395.2px; width: 587.2px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967221477" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967221478" class="image resizable object" style="height: 587.2px; left: 573px; position: absolute; top: 18239.2px; width: 587.2px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967221478" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967221479" class="image resizable object" style="height: 587.2px; left: 196px; position: absolute; top: 17210.2px; width: 552.106px; z-index: 101;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967221479" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967221480" class="image resizable object" style="height: 2065.03px; left: 2442px; position: absolute; top: 27159px; width: 920px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967221480" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967221482" class="image resizable object" style="height: 587.2px; left: 58px; position: absolute; top: 15923.2px; width: 830.384px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967221482" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967221483" class="image resizable object" style="height: 587.2px; left: 52px; position: absolute; top: 16529.2px; width: 830.384px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967221483" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967286161" class="image resizable object" style="height: 3678.11px; left: 1744.8px; position: absolute; top: 27159.8px; width: 852.4px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967286161" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967286162" class="image resizable object" style="height: 1080px; left: 564.333px; position: absolute; top: 21470px; width: 1080px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967286162" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967286164" class="image resizable object" style="height: 663.4px; left: 28.8px; position: absolute; top: 22165.8px; width: 802.131px; z-index: 101;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967286164" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967286166" class="image resizable object" style="height: 972px; left: 649px; position: absolute; top: 22500px; width: 779.2px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967286166" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967286167" class="image resizable object" style="height: 678.667px; left: -0.333328px; position: absolute; top: 21253.7px; width: 957.452px; z-index: 101;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967286167" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967286169" class="image resizable object" style="height: 842.667px; left: 248.667px; position: absolute; top: 23700.7px; width: 845.667px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166967286169" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166967301081" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 32px; font-style: normal; font-weight: bold; height: 95.6667px; left: 746.667px; line-height: 1.36795em; position: absolute; top: 14427.7px; width: 221.667px; z-index: 99;">
+		FANZINE<br>
+		<br>
+	</div>
+	<div id="coursfanzine.head.166967304057" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 32px; font-style: normal; font-weight: bold; height: 152.4px; left: 661.8px; line-height: 1.36795em; position: absolute; top: 14361.8px; width: 220.4px; z-index: 99;">
+		ZINE<br>
+		<br>
+	</div>
+	<div id="coursfanzine.head.166967305238" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 32px; font-style: normal; font-weight: bold; height: 95.6667px; left: 846.667px; line-height: 1.36795em; position: absolute; top: 14499.7px; width: 221.667px; z-index: 99;">
+		PERZINE<br>
+		<br>
+		<br>
+		<br>
+	</div>
+	<div id="coursfanzine.head.166967307186" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 32px; font-style: normal; font-weight: bold; height: 95.6667px; left: 491.667px; line-height: 1.36795em; position: absolute; top: 14411.7px; width: 221.667px; z-index: 99;">
+		BROCHURE<br>
+		<br>
+		<br>
+		<br>
+	</div>
+	<div id="coursfanzine.head.166967307187" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 32px; font-style: normal; font-weight: bold; height: 95.6667px; left: 765.667px; line-height: 1.36795em; position: absolute; top: 14573.7px; width: 221.667px; z-index: 99;">
+		GRAPHZINE<br>
+		<br>
+		<br>
+		<br>
+	</div>
+	<div id="coursfanzine.head.166967309497" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 32px; font-style: normal; font-weight: bold; height: 90.6667px; left: 633.667px; line-height: 1.36795em; position: absolute; top: 14645.7px; width: 317.667px; z-index: 99;">
+		MICROEDITION<br>
+		<br>
+		<br>
+		<br>
+	</div>
+	<div id="coursfanzine.head.166967310691" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 32px; font-style: normal; font-weight: bold; height: 52.6667px; left: 424.667px; line-height: 1.36795em; position: absolute; top: 14487.7px; width: 307.667px; z-index: 99;">
+		REVUE<br>
+		<br>
+	</div>
+	<div id="coursfanzine.head.166967313975" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 32px; font-style: normal; font-weight: bold; height: 52.6667px; left: 479.667px; line-height: 1.36795em; position: absolute; top: 14593.7px; width: 307.667px; z-index: 99;">
+		LIVRE<br>
+		<br>
+	</div>
+	<div id="coursfanzine.head.166967339089" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 32px; font-style: normal; font-weight: bold; height: 320.4px; left: 116.8px; line-height: 1.36795em; position: absolute; top: 15081.8px; width: 856.4px; z-index: 99;">
+		POURQUOI&nbsp;FAIRE&nbsp;?<br>
+		<br>
+		&gt; S'EXPRIMER<br>
+		&gt; TRANSMETTRE<br>
+		&gt; RELIER<br>
+		&gt; PENSER<br>
+		<br>
+		<br>
+	</div>
+	<div id="coursfanzine.head.166967356144" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 32px; font-style: normal; font-weight: normal; height: 98.6667px; left: 71.6667px; line-height: 1.36795em; position: absolute; top: 14296.7px; width: 364.667px; z-index: 99;">
+		frontières d'un format à l'autre<br>
+		<br>
+	</div>
+	<div id="coursfanzine.head.166967427753" class="iframe resizable object" style="height: 945px; left: 1994px; position: absolute; top: 29626px; width: 1321px; z-index: 100;">
+		<iframe name="coursfanzine.head.166967427753" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation" style="background-color: transparent; border-width: 0px; height: 100%; overflow: auto; position: absolute; width: 100%;" src="//clarapacotte.hotglue.me/?bibli" scrolling="auto"></iframe>
+	</div>
+	<div id="coursfanzine.head.166970377979" class="image resizable object" style="height: 486.667px; left: 657.667px; position: absolute; top: 15790.7px; width: 1050.21px; z-index: 99;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166970377979" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166970383645" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 151.4px; left: 61.8px; position: absolute; top: 15815.8px; width: 450.4px; z-index: 100;">
+		Pour une fois j'ai dit Non<br>
+		Black Hood<br>
+		2016<br>
+		sur infokiosques.net<br>
+		A4 plié en deux
+	</div>
+	<div id="coursfanzine.head.166970386851" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 92.4px; left: 303.8px; position: absolute; top: 20243.8px; width: 452.4px; z-index: 100;">
+		Fanzine Gang Reines<br>
+	</div>
+	<div id="coursfanzine.head.166970388075" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 182.4px; left: 757.8px; position: absolute; top: 17215.8px; width: 448.4px; z-index: 100;">
+		Editions Les Grillages<br>
+		à propos du troisième X<br>
+		Grenoble, 2018<br>
+		<br>
+		A4 plié en deux agrafé,<br>
+		laser noir sur papier machine<br>
+		<br>
+		<br>
+	</div>
+	<div id="coursfanzine.head.166970388344" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 92.4px; left: 1172.8px; position: absolute; top: 18246.8px; width: 452.4px; z-index: 100;">
+		T'es un garçon ou une fille ?<br>
+		Editions les Grillages<br>
+		Grenoble, 2018<br>
+		A6 agrafé<br>
+		risographie 2 couleurs
+	</div>
+	<div id="coursfanzine.head.166970399676" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 92.4px; left: 585.8px; position: absolute; top: 19875.8px; width: 452.4px; z-index: 100;">
+		Blerotte #2, la maternité<br>
+		brochure 3 volets A3<br>
+		risographie 
+	</div>
+	<div id="coursfanzine.head.16697041259" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 92.4px; left: 1867.8px; position: absolute; top: 21450.8px; width: 452.4px; z-index: 100;">
+		La Grimoire<br>
+		coordonné par <br>
+		Nadine Laroche<br>
+		Albi<br>
+		1991
+	</div>
+	<div id="coursfanzine.head.16697041377" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 187.4px; left: 965.8px; position: absolute; top: 21256.8px; width: 450.4px; z-index: 100;">
+		Mamma Rassise n°1<br>
+		Marine Forestier<br>
+		2019<br>
+		<br>
+		papiers récupérés, impression laser et couverture sérigraphiée<br>
+		A4 plié en deux
+	</div>
+	<div id="coursfanzine.head.166970414370" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 92.4px; left: 1109.8px; position: absolute; top: 23705.8px; width: 452.4px; z-index: 100;">
+		Mamma Rassise n°3<br>
+		2021
+	</div>
+	<div id="coursfanzine.head.166970433793" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 101.4px; left: 791.8px; position: absolute; top: 25644.8px; width: 349.4px; z-index: 100;">
+		Censored Magazine<br>
+		Apolline et Clémentine Labrosse<br>
+		2018-2022
+	</div>
+	<div id="coursfanzine.head.166970434897" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 136.4px; left: 918.8px; position: absolute; top: 25296.8px; width: 450.4px; z-index: 100;">
+		Pot Pourri<br>
+		La Lune Mauve, Miss Pakotill 2022<br>
+		A4 recto à imprimer soi-même
+	</div>
+	<div id="coursfanzine.head.166970435450" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 92.4px; left: 2156.8px; position: absolute; top: 27096.8px; width: 452.4px; z-index: 100;">
+		@bicoli_collective<br>
+		Bruxelles<br>
+		2020 -
+	</div>
+	<div id="coursfanzine.head.166970438040" class="image resizable object" style="height: 400px; left: 1362px; position: absolute; top: 27020px; width: 600px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166970438040" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166970444374" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 96.4px; left: 1286.8px; line-height: 0.902665em; position: absolute; top: 2760.8px; width: 243.4px; z-index: 100;">
+		Gunk #4<br>
+		Ramdasha<br>
+		1994
+	</div>
+	<div id="coursfanzine.head.166970459397" class="text resizable object" style="background-color: rgb(255, 44, 236); font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 76.4px; left: 714.8px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; padding-top: 0px; position: absolute; top: 6922.8px; width: 232.4px; z-index: 100;">
+		Bikini Kill #2<br>
+		Kathleen Hanna<br>
+		1991
+	</div>
+	<div id="coursfanzine.head.166970868431" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 187.4px; left: 38.8px; position: absolute; top: 22846.8px; width: 450.4px; z-index: 100;">
+		Mamma Rassise n°2<br>
+		Marine Forestier<br>
+		2020<br>
+		<br>
+		papiers récupérés, impression laser et couverture riso<br>
+	</div>
+	<div id="coursfanzine.head.166970903889" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 92.4px; left: 2882.8px; position: absolute; top: 27090.8px; width: 452.4px; z-index: 100;">
+		@memoiresminoritaires<br>
+		Vaulx-en-Velin<br>
+		Brrrazero
+	</div>
+	<div id="coursfanzine.head.166970912017" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 92.4px; left: 1996.8px; position: absolute; top: 29596.8px; width: 452.4px; z-index: 100;">
+		Clara Pacotte, Bibli de zouz
+	</div>
+	<div id="coursfanzine.head.166970913548" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 92.4px; left: 1361.8px; position: absolute; top: 26952.8px; width: 452.4px; z-index: 100;">
+		Les Orageuses<br>
+		Bibliothèque féministe mobile<br>
+		2021
+	</div>
+	<div id="coursfanzine.head.166971029775" class="image resizable object" style="height: 710px; left: 565px; position: absolute; top: 27100px; width: 711px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166971029775" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166971029776" class="image resizable object" style="height: 602px; left: 36px; position: absolute; top: 26602px; width: 844.364px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166971029776" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166971029777" class="image resizable object" style="height: 804.4px; left: 669.8px; position: absolute; top: 25493.8px; width: 803.4px; z-index: 99;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166971029777" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166971029778" class="image resizable object" style="height: 635px; left: 32px; position: absolute; top: 25632px; width: 634px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166971029778" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166971057797" class="image resizable object" style="height: 670px; left: 719px; position: absolute; top: 26154px; width: 670.14px; z-index: 100;">
+		<img src="https://elisegoutagny.hotglue.me/?coursfanzine.head.166971057797" alt="" style="border: 0px; height: 100%; margin: 0px; padding: 0px; width: 100%;">
+	</div>
+	<div id="coursfanzine.head.166971064171" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 154.4px; left: 1002.8px; position: absolute; top: 26123.8px; width: 450.4px; z-index: 100;">
+		Censored n°7, réponse à la violence
+	</div>
+	<div id="coursfanzine.head.166971065626" class="text resizable object" style="background-color: rgb(255, 255, 255); font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 55.4px; left: 62.8px; position: absolute; top: 25684.8px; width: 448.4px; z-index: 100;">
+		Censored n°7, réponse à la violence
+	</div>
+	<div id="coursfanzine.head.166971067276" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 148.4px; left: 45.8px; position: absolute; top: 26542.8px; width: 661.4px; z-index: 100;">
+		Censored n°7,living in a fantasy world <br>
+		images de Chloé Rozy Sapelkine + SISSI club
+	</div>
+	<div id="coursfanzine.head.166971085187" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 25px; font-style: normal; font-weight: bold; height: 148.4px; left: 576.8px; position: absolute; top: 27823.8px; width: 661.4px; z-index: 100;">
+		Censored n°00, un corps à soi
+	</div>
+	<div id="coursfanzine.head.16697109767" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 32px; font-style: normal; font-weight: normal; height: 90.4px; left: 58.8001px; line-height: 1.36795em; position: absolute; top: 15647.8px; width: 378.4px; z-index: 99;">
+		--&gt; frontière  avec la brochure<br>
+		<br>
+	</div>
+	<div id="coursfanzine.head.166971102428" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 32px; font-style: normal; font-weight: normal; height: 101.4px; left: 49.8001px; line-height: 1.36795em; position: absolute; top: 18069.8px; width: 376.4px; z-index: 99;">
+		--&gt; frontière  avec la microédition<br>
+		<br>
+	</div>
+	<div id="coursfanzine.head.166971104844" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 32px; font-style: normal; font-weight: normal; height: 101.4px; left: 38.8001px; line-height: 1.36795em; position: absolute; top: 24585.8px; width: 376.4px; z-index: 101;">
+		--&gt; frontière  avec l'illustration<br>
+		<br>
+	</div>
+	<div id="coursfanzine.head.166971113083" class="text resizable object" style="background-color: transparent; font-family: &quot;Courier New&quot;, Courier, monospace; font-size: 32px; font-style: normal; font-weight: normal; height: 101.4px; left: 46.8px; line-height: 1.36795em; position: absolute; top: 25479.8px; width: 376.4px; z-index: 101;">
+		--&gt; frontière  avec le magazine<br>
+		objet hybride<br>
+	</div>
+</body>
+</html>
