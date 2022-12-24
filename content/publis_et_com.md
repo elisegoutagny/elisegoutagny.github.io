@@ -3,11 +3,8 @@ title: "publi et communications"
 draft: false
 ---
 # articles
-« Pratiques féministes et queer de la microédition : graphisme, langage, transmission », dans *Fabriquer le genre*, revue *Techniques&Cultures* n°77, EHESS, juin 2022.[^1]
+« Pratiques féministes et queer de la microédition : graphisme, langage, transmission », dans *Fabriquer le genre*, revue *Techniques&Cultures* n°77, EHESS, juin 2022.[^1]  
 → [lire en ligne sur Cairn](https://www.cairn.info/revue-techniques-et-culture-2022-1-page-158.htm)
-
-![lain.png](/lain.png 'lain.png')
-
 
   {{< details "résumé">}}
   
@@ -40,7 +37,7 @@ Le Centre Georges-Pompidou a conservé dans ses archives deux extraits de livres
 Il apparaît que l’exposition est bien souvent « en-dessous de la réalité vécue des femmes » comme le souligne une commentatrice. Le public peine à s’identifier comme cible et se sent peu concerné par ces femmes des magazines. L’espace du livre d’or devient alors un espace de débat et de suggestion, qui complète l’exposition, et crée le dialogue et la critique qui semblaient manquer aux panneaux muets.
 {{< /details >}}
 
-Présentation de « LA FORME/féminin SUIT LA FONCTION/masculin » de Judy Attfield, à l’occasion de sa traduction en français. RADDAR n°3.
+Présentation de « LA FORME/féminin SUIT LA FONCTION/masculin » de Judy Attfield, à l’occasion de sa traduction en français. [RADDAR n°3](https://mudac.ch/shop/raddar3/).
 
 # communications
 
